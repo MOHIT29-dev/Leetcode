@@ -5,9 +5,9 @@ public:
 
         for(int num : nums){
             if (count == 0){
-                candidate = num;
+                candidate = num; // updating candidate
             }
-            count += (num == candidate) ? 1: -1;
+            count += (num == candidate) ? 1: -1; //updating count
         }
         return candidate;
     }
