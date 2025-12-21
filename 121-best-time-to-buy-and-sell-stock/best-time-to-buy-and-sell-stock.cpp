@@ -4,7 +4,7 @@ public:
         int pro = 0;
         int price = INT_MAX;
         for(int i = 0; i < prices.size(); i++){ 
-            price = min(price, prices[i]); 
+            price = min(price, prices[i]); //updating price
             pro = max(pro, prices[i] - price); //updating profit 
         }
         return pro;
