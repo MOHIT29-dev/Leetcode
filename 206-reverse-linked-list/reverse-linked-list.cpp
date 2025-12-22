@@ -18,7 +18,7 @@ public:
             ListNode* nextnode = curr -> next; //storing next
             curr->next = prev; // reversing list
             prev =curr; //moving previous
-            curr = nextnode;
+            curr = nextnode; // moving curr
         } 
         return prev;
     }
