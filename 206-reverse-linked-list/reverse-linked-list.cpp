@@ -15,10 +15,10 @@ public:
         ListNode* curr = head;
 
         while(curr != nullptr){
-            ListNode* nextnode = curr -> next; //storing next
-            curr->next = prev; // reversing list
-            prev =curr; //moving previous
-            curr = nextnode; // moving curr
+            ListNode* nextnode = curr -> next;
+            curr->next = prev;
+            prev =curr;
+            curr = nextnode;
         } 
         return prev;
     }
