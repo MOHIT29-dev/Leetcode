@@ -12,6 +12,9 @@ public:
         ListNode *slow = head;
         ListNode *fast = head;
 
+
+        //using FLOYD's Algorithm
+         
         while(fast != NULL && fast->next != NULL){
             slow = slow->next;
             fast = fast->next->next;
