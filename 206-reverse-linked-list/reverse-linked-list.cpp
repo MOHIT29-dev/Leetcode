@@ -17,7 +17,7 @@ public:
         while(curr != nullptr){
             ListNode* nextnode = curr -> next; //storing next
             curr->next = prev; // reversing list
-            prev =curr;
+            prev =curr; //moving previous
             curr = nextnode;
         } 
         return prev;
