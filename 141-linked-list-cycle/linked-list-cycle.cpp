@@ -14,7 +14,7 @@ public:
 
 
         //using FLOYD's Algorithm
-         
+         //use of two pointers
         while(fast != NULL && fast->next != NULL){
             slow = slow->next;
             fast = fast->next->next;
