@@ -17,8 +17,8 @@ public:
          //use of two pointers
         while(fast != NULL && fast->next != NULL){
             slow = slow->next;
-            fast = fast->next->next;
-            if(slow ==  fast)
+            fast = fast->next->next; //fast pointer moves two steps ahead
+            if(slow ==  fast) 
                 return true;
         }
         return false;
