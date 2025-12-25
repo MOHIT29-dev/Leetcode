@@ -6,7 +6,7 @@ public:
 
         for (int right = 0 ; right <s.length(); right++){
             if (lastindex[s[right]] >= left){
-                left = lastindex[s[right]] + 1;
+                l = lastindex[s[right]] + 1;
             }
             lastindex[s[right]] = right;
             maxlen = max(maxlen, right-left + 1);
