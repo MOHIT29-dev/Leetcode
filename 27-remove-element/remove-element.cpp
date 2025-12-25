@@ -5,7 +5,7 @@ public:
         for (int i=0;i<nums.size();i++){
             if(nums[i] !=val){
                 nums[a]=nums[i];
-                k++;
+                a++;
             }
         }
         return k;
