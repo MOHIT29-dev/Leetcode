@@ -8,6 +8,6 @@ public:
                 a++;
             }
         }
-        return k;
+        return a;
     }
 };
