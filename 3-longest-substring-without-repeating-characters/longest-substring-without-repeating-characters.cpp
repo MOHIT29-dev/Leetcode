@@ -9,7 +9,7 @@ public:
                 l = lastindex[s[right]] + 1;
             }
             lastindex[s[right]] = right;
-            maxlen = max(maxlen, right-left + 1);
+            maxlen = max(maxlen, right-l + 1);
         }
         return maxlen;
     }
