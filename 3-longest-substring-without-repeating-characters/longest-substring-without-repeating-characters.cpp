@@ -5,7 +5,7 @@ public:
         int l = 0, maxlen = 0;
 
         for (int right = 0 ; right <s.length(); right++){
-            if (lastindex[s[right]] >= left){
+            if (lastindex[s[right]] >= l){
                 l = lastindex[s[right]] + 1;
             }
             lastindex[s[right]] = right;
