@@ -8,6 +8,7 @@ public:
         for(int i =0 ; i< nums.size(); i++){
             // Check if current number has appeared before
             if (lastindex.count(nums[i])){
+                // Check if the distance between indices is <= k
                 if (i-lastindex[nums[i]] <= k){
                     return true;
                 }
