@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool containsNearbyDuplicate(vector<int>& nums, int k) {
+        // Map to store the last index where each number appeared
         unordered_map<int, int> lastindex;
 
         for(int i =0 ; i< nums.size(); i++){
