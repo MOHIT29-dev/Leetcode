@@ -13,6 +13,9 @@ public:
                     return true; // Duplicate found within range
                 }
             }
+
+            // Update the last seen index of the current number
+
             lastindex[nums[i]] = i;
         }
         return false;
