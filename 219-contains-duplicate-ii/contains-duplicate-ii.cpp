@@ -6,6 +6,7 @@ public:
 
         // Traverse the array
         for(int i =0 ; i< nums.size(); i++){
+            // Check if current number has appeared before
             if (lastindex.count(nums[i])){
                 if (i-lastindex[nums[i]] <= k){
                     return true;
