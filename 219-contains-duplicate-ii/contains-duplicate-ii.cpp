@@ -10,7 +10,7 @@ public:
             if (lastindex.count(nums[i])){
                 // Check if the distance between indices is <= k
                 if (i-lastindex[nums[i]] <= k){
-                    return true;
+                    return true; // Duplicate found within range
                 }
             }
             lastindex[nums[i]] = i;
