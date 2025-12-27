@@ -18,6 +18,8 @@ public:
 
             lastindex[nums[i]] = i;
         }
+
+        // No valid duplicate found
         return false;
     }
 };
